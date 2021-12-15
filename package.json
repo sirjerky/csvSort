@@ -1,0 +1,24 @@
+{
+  "name": "codetest",
+  "version": "1.0.0",
+  "description": "testing for code challenge",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ts-mocha",
+    "start": "ts-node ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirjerky/csvSort.git"
+  },
+  "author": "Adam Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirjerky/csvSort/issues"
+  },
+  "homepage": "https://github.com/sirjerky/csvSort#readme",
+  "dependencies": {
+    "ts-mocha": "^8.0.0",
+    "ts-node": "^10.4.0"
+  }
+}
