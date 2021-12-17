@@ -36,7 +36,7 @@ describe('csvParser test suite', () => {
     const testArray: Person[] = [person, person, person2, person3, person4]
 
     it('should parse given file', async () => {
-        const location = path.resolve(__dirname, '../resources/personList.csv')
+        const location = path.resolve(__dirname, './test-resources/personList.csv')
         const personList: Array<Person> = await readCSV(location);
         assert(personList.length > 0)
     })
