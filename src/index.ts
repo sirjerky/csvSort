@@ -30,7 +30,7 @@ async function run() {
     if (!file) {
         throw new Error('Error with command prompt');
     }
-    fileName = path.resolve(__dirname, '../resources', file);
+    fileName = path.resolve(__dirname, file);
     try {
         sortType = getSortInput(sort);
     } catch(err) {
