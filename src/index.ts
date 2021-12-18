@@ -37,15 +37,9 @@ async function run() {
         console.error(err);
     }
     
-    console.log(`file: ${file}`)
-    console.log(` sort: ${sort}`)
-    
-    
     const personList: Person[] = await readCSV(fileName)
     const finalList: Person[] = dedupeList(sortType, personList)
-    console.log('list', finalList);
-    writeCSV(finalList);
-    
+    writeCSV(finalList); 
 }
 
 run();

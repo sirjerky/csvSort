@@ -30,7 +30,7 @@ export async function readCSV(location: string): Promise<Person[]> {
 }
 
 export function writeCSV(persons: Person[]): void {
-    const output = fs.createWriteStream(path.resolve(__dirname, '../dist/output.csv'));
+    const output = fs.createWriteStream(path.resolve(__dirname, './output.csv'));
     writeToStream(output, persons, { headers: ['FirstName', 'LastName', 'Email', 'Phone']})
     .on('error', (err: Error) => console.error(err))
     .on('finish', () => console.log('done'));
